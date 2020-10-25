@@ -1,0 +1,818 @@
+@import 'fonts';
+@import 'color background';
+@import 'mixins';
+@import 'queries';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4 {
+
+    color: #FCAF4A;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    color: black;
+}
+
+.encabezado1,
+ul li,
+.textocomofunciona4,
+.textoconclusioncomofunciona,
+.button2comofunciona,
+.button2viajero,
+.button2local,
+.buttonformulario,
+ol li,
+.faq {
+    color: $font-gris;
+}
+
+
+.textocomofunciona3,
+.textoviajero3,
+.textolocal3 {
+    background-color: $backgroundgris;
+}
+
+
+
+.button1index,
+.textocomofunciona2,
+.textoviajero2,
+.textolocal2,
+.button1comofunciona,
+.button1viajero,
+.button1local,
+.footerindex,
+.footercomofunciona {
+    background-color: $backgroundnaranja;
+}
+
+.headerlogo,
+.textoindex1,
+.textoviajero,
+.textolocal,
+.button2index,
+.textocomofunciona,
+.textoexperienciadenuestrosusuarios {
+    background-color: $backgroundheader;
+}
+
+a,
+.encabezado2,
+h4,
+h2,
+.local,
+.viajero,
+.button1index,
+.button1comofunciona,
+.logofooter {
+    font-family: $font-comfortaa;
+}
+
+p,
+.textoviajero,
+.textolocal,
+.textoindex1,
+.button2index,
+ul li,
+.button2comofunciona,
+.pexperienciadenuestrosusuarios,
+ol li,
+.encabezado1 {
+    font-family: $font-opensans;
+}
+
+/*inicio header/*/
+
+.headerlogo {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .encabezado1
+
+    /*proyecto ux/ui/*/
+        {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        padding: 10px 40px 10px 40px;
+        margin: 0 auto;
+    }
+
+    .bloquelogo {
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        @include queries-bloquelogo;
+
+        &:hover {
+            @include transform()
+        }
+
+        .encabezado2
+
+        /*viajando como local /*/
+            {
+            font-style: bold;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        .logo
+
+        /*go native/*/
+            {
+            height: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            @include queries-logo;
+        }
+    }
+
+
+    .menu1 {
+        height: 100%;
+        width: 100%;
+        padding: 0 auto;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        overflow-x: auto;
+        white-space: wrap;
+        -webkit-overflow-scrolling: touch;
+        @include queries-menu1();
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Comfortaa', cursive;
+            text-transform: uppercase;
+            font-size: 15px;
+            padding: 10px 20px 10px 20px;
+
+
+            &:hover {
+                color: $backgroundnaranja;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            &:active {
+                border-bottom:$backgroundnaranja solid 3px;
+                text-decoration: none;
+                font-weight: bold;
+                  }
+        }
+
+        .activisimoverde {
+            background-color: $backgroundverde;
+            padding: 5px;
+            border-radius: 10px;
+            font-style: none;
+
+            span{
+                color: white;
+            }
+        }
+        .activisimorojo {
+            background-color: $backgroundrojo;
+            padding: 5px;
+            border-radius: 10px;
+            font-style: none;
+
+            span{
+                color: white;
+            }
+                    }
+                    .activisimonaranja {
+                        background-color: $backgroundnaranja;
+                        padding: 5px;
+                        border-radius: 10px;
+                        font-style: none;
+            
+                        span{
+                            color: white;
+                        }
+                                }             
+    }
+}
+
+/*fin header/*/
+
+
+/*inicio footer/*/
+
+.footerindex {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+
+    .logofooter {
+        color: black;
+        font-style: bold;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .redes {
+        padding: 5px;
+
+        img {
+            margin: 5px;
+        }
+    }
+
+}
+
+/*fin footer/*/
+
+/*imagen mision /*/
+.imagenmision {
+    width: 100%;
+    height: 550px;
+    background-image: url(../../desafio12/IMAGE/mision.jpg);
+    background-size: 100% 100%;
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    @include queries-imagenmision;
+
+    .textoindex1 {
+        color: black;
+        font-size: 18px;
+        font-style: bold;
+        padding: 30px 30px 30px 30px;
+        opacity: .8;
+        border-radius: 5px;
+        height: fit-content;
+        width: 250px;
+        position: absolute;
+        @include queries-textoindex1;
+    }
+
+    .uneteanuestracomunidad {
+        margin: 200px 0px 0px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        @include queries-uneteanuestracomunidad;
+
+        .button1index {
+            color: white;
+            width: 300px;
+            height: 70px;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 22px;
+            padding: 10px;
+            margin: 30px;
+            @include queries-buttonindex
+        }
+
+        .button2index {
+            border-radius: 20px;
+            padding: 10px;
+            width: 300px;
+            height: 40px;
+            text-transform: uppercase;
+            font-size: 16px;
+            text-align: center;
+            margin: 30px;
+            @include queries-buttonindex
+        }
+
+        .redes1 {
+            width: 300px;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            text-align: flex-end;
+            margin: 30px;
+            @include queries-redes1;
+
+            .playstore,
+            .microsoft {
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+
+
+            .playstore {
+                background-image: url(../../desafio12/svg/playstore.svg);
+            }
+
+            .microsoft {
+                background-image: url(../../desafio12/svg/microsoft.svg);
+            }
+
+            .aplee {
+                background-image: url(../../desafio12/SVG/AppStore.svg);
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+/*fin imagen mision /*/
+
+/*imagen como funciona /*/
+.imagencomofunciona {
+    background-image: url(../../desafio12/IMAGE/comofuncionaimagen.jpg);
+    height: 550px;
+    width: 100%;
+    background-size: 100% 110%;
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    @include queries-imagencomofunciona;
+
+
+    .textocomofunciona {
+        font-size: 18px;
+        font-style: bold;
+        padding: 30px;
+        width: 250px;
+        height: fit-content;
+        opacity: .8;
+        border-radius: 5px;
+    }
+}
+
+/*fin imagen como funciona /*/
+
+/*body como funciona /*/
+.bodycomofunciona {
+    background-color: $backgroundheader;
+
+
+    .textocomofunciona2 {
+        font-size: 18px;
+        padding: 20px;
+        color: $font-white;
+        position: relative;
+        margin: 00px 0px 0px 40px;
+        border-top: 20px $backgroundheader solid;
+    }
+
+    .textocomofunciona3 {
+        font-size: 16px;
+        padding: 20px;
+        color: $font-white;
+        position: relative;
+        margin: 20px 0px 0px 40px;
+    }
+
+    
+    .espacioentrelocalyviajero {
+        height: 20px;
+        width: 100%;
+        background-color: $backgroundheader;
+       
+    }
+    .tablalau {
+       
+        ul li {
+            font-size: 16px;
+            line-height: 30px;
+            margin-inline-end: 20px;
+            margin-inline-start: 20px;
+        }
+
+        .local {
+            color: #F2787A;
+            font-size: 21px;
+            letter-spacing: 5px;
+            padding-left: 40px;
+            width: 170px;
+            @include queries-local;
+            
+
+        }
+
+
+        .viajero {
+            color: #58DBA3;
+            font-size: 21px;
+            letter-spacing: 5px;
+            padding-left: 40px;
+            width: 170px;
+            @include queries-viajero;
+
+        }
+
+    }
+
+
+    .textocomofunciona4 {
+        font-size: 18px;
+        padding: 20px;
+        margin: 20px 0px 0px 40px;
+        background-color: $backgroundrojo;
+        color: white;
+
+    }
+
+    .contenedorlogocomofunciona {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .logocomofunciona {
+        width: min-content;
+        margin: 30px 0px 30px 0px;
+        @include queries-logocomofunciona;
+    }
+
+    .conclusioncomofunciona {
+        display: flex;
+        justify-content: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 40px 40px 40px;
+        @include queries-conclusioncomofunciona;
+
+    }
+
+    .textoconclusioncomofunciona {
+        width: 500px;
+        font-size: 16px;
+        margin: 0px;
+        @include queries-textoconclusioncomofunciona;
+    }
+
+    .imagenconclusioncomofunciona {
+        width: 600px;
+        border-radius: 30px;
+        margin: 0px;
+        @include queries-imagenconclusioncomofunciona;
+
+    }
+
+    /*fin conclusion como funciona /*/
+
+
+    .textocomofunciona5 {
+        font-size: 18px;
+        padding: 20px;
+        color: white;
+        background-color: #58DBA3;
+        margin: 20px 0px 0px 40px;
+
+    }
+
+    .uneteanuestracomunidadcomofunciona {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        background-color: $backgroundheader;
+        @include queries-uneteanuestracomunidadcomofunciona;
+
+
+        .button1comofunciona {
+            color: white;
+            width: 300px;
+            height: 70px;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 22px;
+            padding: 10px;
+            margin: 30px;
+            @include queries-buttonscomofunciona;
+        }
+
+        .button2comofunciona {
+            padding: 10px;
+            width: 300px;
+            height: 40px;
+            text-transform: uppercase;
+            font-size: 16px;
+            text-align: center;
+            margin: 30px 100px 0px 100px;
+            @include queries-buttonscomofunciona;
+
+        }
+
+        .redes1comofunciona {
+            width: 300px;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            margin: 30px;
+            border-bottom: 100px solid $backgroundheader;
+            @include queries-redes1comofunciona;
+
+            .playstore,
+            .microsoft {
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+
+
+            .playstore {
+                background-image: url(../../desafio12/svg/playstore.svg);
+            }
+
+            .microsoft {
+                background-image: url(../../desafio12/svg/microsoft.svg);
+            }
+
+            .aplee {
+                background-image: url(../../desafio12/SVG/AppStore.svg);
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+
+            hr {
+                margin: 0px 0px 0px 40px;
+            }
+
+        }
+
+
+    }
+
+
+
+
+}
+
+/*fin body como funciona /*/
+
+/*imagen viajero/*/
+.imagenviajero {
+    background-image: url(../../desafio12/IMAGE/viajero.jpg);
+    height: 550px;
+    width: 100%;
+    background-size: 100% 110%;
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    @include queries-imagenviajero;
+
+
+    .textoviajero {
+        font-size: 18px;
+        font-style: bold;
+        padding: 30px;
+        width: 250px;
+        height: fit-content;
+        opacity: 0.8;
+        border-radius: 5px;
+    }
+}
+/*fin imagen viajero/*/
+
+/*body viajero/*/
+.bodyviajero {
+    background-color: $backgroundheader;
+   
+
+    .textoviajero2 {
+        font-size: 18px;
+        padding: 20px;
+        color: $font-white;
+        position: relative;
+        margin: 00px 0px 0px 40px;
+        border-top: 20px $backgroundheader solid;
+    }
+
+    .textoviajero3 {
+        font-size: 16px;
+        padding: 20px;
+        color: $font-white;
+        position: relative;
+        margin: 20px 0px 0px 40px;
+    }
+
+
+    .listaviajero{
+       
+        display: flex;
+        justify-content: inherit;
+                    
+        .col-12{
+            padding: 0 !important;
+        }
+       .listado {
+           
+            @include queries-listadohorizontal;
+          
+            @include queries-listadovertical;
+                     }
+
+        .list-group-item.active {
+            color: #fff;
+            background-color: $backgroundverde !important;
+            border: solid $backgroundverde 1px !important;
+                      }
+          .tab-pane{
+              padding-bottom: 30px;
+              padding-left: 40px;
+              padding-right: 40px;
+          }
+    
+        .redes1viajero {
+           
+            .playstore {
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+
+            .microsoft {
+               
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+
+            .aplee {
+               
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+        
+
+    }          
+}
+
+}
+/*fin body viajero/*/
+
+/*imagen local/*/
+.imagenlocal {
+    background-image: url(../../desafio12/IMAGE/local.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: 100% 110%;
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    @include queries-imagenlocal;
+
+
+    .textolocal {
+        font-size: 18px;
+        font-style: bold;
+        padding: 30px;
+        width: 250px;
+        height: fit-content;
+        opacity: 0.8;
+        border-radius: 5px;
+    }
+}
+/*fin imagen local/*/
+
+/*body local/*/
+.bodylocal {
+    background-color: $backgroundheader;
+   
+
+    .textolocal2 {
+        font-size: 18px;
+        padding: 20px;
+        color: $font-white;
+        position: relative;
+        margin: 00px 0px 0px 40px;
+        border-top: 20px $backgroundheader solid;
+    }
+
+    .textolocal3 {
+        font-size: 16px;
+        padding: 20px;
+        color: $font-white;
+        position: relative;
+        margin: 20px 0px 0px 40px;
+    }
+
+
+    .listalocal{
+       
+        display: flex;
+        justify-content: inherit;
+                    
+        .col-12{
+            padding: 0 !important;
+        }
+       .listado {
+           
+            @include queries-listadohorizontal;
+          
+            @include queries-listadovertical;
+                     }
+
+        .list-group-item.active {
+            color: #fff;
+            background-color: $backgroundrojo !important;
+            border: solid $backgroundrojo 1px !important;
+                      }
+          .tab-pane{
+              padding-bottom: 30px;
+              padding-left: 40px;
+          }
+    .uneteanuestracomunidadlocal {
+        margin: 0 auto;
+        width: 400px;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        background-color: $backgroundheader;
+        border-bottom: solid 50px $backgroundheader;
+        @include queries-uneteanuestracomunidadlocal;
+
+      
+    }          
+}
+
+}
+
+/*fin body local/*/
+
+/*imagen experiencia de nuestros usuarios /*/
+.imagenexperienciadenuestrosusuarios {
+
+    background-image: url(../../desafio12/IMAGE/experienciadenuestrosusuarios.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: 100% 100%;
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    @include queries-imagenexperienciadenuestrosusuarios;
+
+    .textoexperienciadenuestrosusuarios {
+        font-size: 18px;
+        font-style: bold;
+        padding: 30px;
+        width: 250px;
+        height: 220px;
+        opacity: .8;
+        border-radius: 5px;
+        position: absolute;
+        @include queries-textoexperienciadenuestrosusuarios;
+    }
+
+    .carrousellau {
+        height: 100px;
+        margin: auto;
+        margin-top: 250px;
+
+        .carousel {
+            @include queries-carousel;
+
+            .textocarrouselexperiencia {
+                background-color: black;
+                opacity: .7;
+            }
+
+            .pexperienciadenuestrosusuarios {
+                color: blanchedalmond;
+            }
+
+            .imagencarrousel {
+                @include queries-imagencarrousel;
+            }
+        }
+
+
+    }
+}
+/*imagen experiencia de nuestros usuarios /*/

@@ -1,0 +1,1208 @@
+/*header /*/
+/*fin header/*/
+/*mision /*/
+/*mision /*/
+/*como funciona /*/
+/*como funciona /*/
+/*viajero/*/
+/*fin viajero/*/
+/*local/*/
+/*fin local/*/
+/*experiencia de nuestros usuarios /*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h4 {
+  color: #FCAF4A;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  color: black;
+}
+
+.encabezado1,
+ul li,
+.textocomofunciona4,
+.textoconclusioncomofunciona,
+.button2comofunciona,
+.button2viajero,
+.button2local,
+.buttonformulario,
+ol li,
+.faq {
+  color: #6E827A;
+}
+
+.textocomofunciona3,
+.textoviajero3,
+.textolocal3 {
+  background-color: #6E827A;
+}
+
+.button1index,
+.textocomofunciona2,
+.textoviajero2,
+.textolocal2,
+.button1comofunciona,
+.button1viajero,
+.button1local,
+.footerindex,
+.footercomofunciona {
+  background-color: #FCAF4A;
+}
+
+.headerlogo,
+.textoindex1,
+.textoviajero,
+.textolocal,
+.button2index,
+.textocomofunciona,
+.textoexperienciadenuestrosusuarios {
+  background-color: #f3f3f3;
+}
+
+a,
+.encabezado2,
+h4,
+h2,
+.local,
+.viajero,
+.button1index,
+.button1comofunciona,
+.logofooter {
+  font-family: "Comfortaa", cursive;
+}
+
+p,
+.textoviajero,
+.textolocal,
+.textoindex1,
+.button2index,
+ul li,
+.button2comofunciona,
+.pexperienciadenuestrosusuarios,
+ol li,
+.encabezado1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*inicio header/*/
+.headerlogo {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.headerlogo .encabezado1 {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  margin: 0 auto;
+}
+.headerlogo .bloquelogo {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .headerlogo .bloquelogo {
+    width: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 271px) and (max-width: 420px) {
+  .headerlogo .bloquelogo {
+    width: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .headerlogo .bloquelogo {
+    width: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+.headerlogo .bloquelogo:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+}
+.headerlogo .bloquelogo .encabezado2 {
+  font-style: bold;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.headerlogo .bloquelogo .logo {
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 271px) and (max-width: 500px) {
+  .headerlogo .bloquelogo .logo {
+    margin-bottom: 0;
+    height: 75px;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .headerlogo .bloquelogo .logo {
+    height: 70px;
+    margin-bottom: 0px;
+  }
+}
+.headerlogo .menu1 {
+  height: 100%;
+  width: 100%;
+  padding: 0 auto;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  overflow-x: auto;
+  white-space: wrap;
+  -webkit-overflow-scrolling: touch;
+}
+@media only screen and (max-width: 680px) {
+  .headerlogo .menu1 {
+    justify-content: space-between;
+  }
+}
+.headerlogo .menu1 a {
+  text-decoration: none;
+  color: black;
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+}
+.headerlogo .menu1 a:hover {
+  color: #FCAF4A;
+  text-decoration: none;
+  font-weight: bold;
+}
+.headerlogo .menu1 a:active {
+  border-bottom: #FCAF4A solid 3px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.headerlogo .menu1 .activisimoverde {
+  background-color: #58DBA3;
+  padding: 5px;
+  border-radius: 10px;
+  font-style: none;
+}
+.headerlogo .menu1 .activisimoverde span {
+  color: white;
+}
+.headerlogo .menu1 .activisimorojo {
+  background-color: #F2787A;
+  padding: 5px;
+  border-radius: 10px;
+  font-style: none;
+}
+.headerlogo .menu1 .activisimorojo span {
+  color: white;
+}
+.headerlogo .menu1 .activisimonaranja {
+  background-color: #FCAF4A;
+  padding: 5px;
+  border-radius: 10px;
+  font-style: none;
+}
+.headerlogo .menu1 .activisimonaranja span {
+  color: white;
+}
+
+/*fin header/*/
+/*inicio footer/*/
+.footerindex {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 30px;
+}
+.footerindex .logofooter {
+  color: black;
+  font-style: bold;
+  font-size: 24px;
+  font-weight: bold;
+}
+.footerindex .redes {
+  padding: 5px;
+}
+.footerindex .redes img {
+  margin: 5px;
+}
+
+/*fin footer/*/
+/*imagen mision /*/
+.imagenmision {
+  width: 100%;
+  height: 550px;
+  background-image: url(../../desafio12/IMAGE/mision.jpg);
+  background-size: 100% 100%;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .imagenmision {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 150% 100%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .imagenmision {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 230% 100%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagenmision {
+    height: 670px;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 330% 100%;
+  }
+}
+@media only screen and (min-width: 271px) and (max-width: 420px) {
+  .imagenmision {
+    display: flex;
+    flex-wrap: wrap;
+    height: 900px;
+    background-size: 400% 100%;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .imagenmision {
+    display: flex;
+    flex-wrap: wrap;
+    height: 900px;
+    background-size: 500% 100%;
+  }
+}
+.imagenmision .textoindex1 {
+  color: black;
+  font-size: 18px;
+  font-style: bold;
+  padding: 30px 30px 30px 30px;
+  opacity: 0.8;
+  border-radius: 5px;
+  height: fit-content;
+  width: 250px;
+  position: absolute;
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .imagenmision .textoindex1 {
+    margin-left: 10px;
+    position: absolute;
+    height: 150px;
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .imagenmision .textoindex1 {
+    margin-left: 10px;
+    position: absolute;
+    height: 180px;
+    width: 210px;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagenmision .textoindex1 {
+    margin-left: 10px;
+    position: absolute;
+    height: 240px;
+    width: 190px;
+  }
+}
+@media only screen and (min-width: 271px) and (max-width: 420px) {
+  .imagenmision .textoindex1 {
+    margin-left: 10px;
+    position: absolute;
+    height: 240px;
+    width: 190px;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .imagenmision .textoindex1 {
+    margin-left: 10px;
+    position: absolute;
+    height: 270px;
+    width: 150px;
+    font-size: 17px;
+  }
+}
+.imagenmision .uneteanuestracomunidad {
+  margin: 200px 0px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 501px) and (max-width: 1060px) {
+  .imagenmision .uneteanuestracomunidad {
+    margin-top: 200px;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagenmision .uneteanuestracomunidad {
+    margin-top: 250px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 271px) and (max-width: 420px) {
+  .imagenmision .uneteanuestracomunidad {
+    margin-top: 280px;
+    margin-bottom: 100px;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .imagenmision .uneteanuestracomunidad {
+    margin-top: 280px;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.imagenmision .uneteanuestracomunidad .button1index {
+  color: white;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 22px;
+  padding: 10px;
+  margin: 30px;
+}
+@media only screen and (max-width: 420px) {
+  .imagenmision .uneteanuestracomunidad .button1index {
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;
+    height: min-content;
+    margin: 15px 0px 15px 0px;
+    justify-content: center;
+  }
+}
+.imagenmision .uneteanuestracomunidad .button2index {
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  margin: 30px;
+}
+@media only screen and (max-width: 420px) {
+  .imagenmision .uneteanuestracomunidad .button2index {
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;
+    height: min-content;
+    margin: 15px 0px 15px 0px;
+    justify-content: center;
+  }
+}
+.imagenmision .uneteanuestracomunidad .redes1 {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  text-align: flex-end;
+  margin: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .imagenmision .uneteanuestracomunidad .redes1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.imagenmision .uneteanuestracomunidad .redes1 .playstore,
+.imagenmision .uneteanuestracomunidad .redes1 .microsoft {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.imagenmision .uneteanuestracomunidad .redes1 .playstore {
+  background-image: url(../../desafio12/svg/playstore.svg);
+}
+.imagenmision .uneteanuestracomunidad .redes1 .microsoft {
+  background-image: url(../../desafio12/svg/microsoft.svg);
+}
+.imagenmision .uneteanuestracomunidad .redes1 .aplee {
+  background-image: url(../../desafio12/SVG/AppStore.svg);
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+
+/*fin imagen mision /*/
+/*imagen como funciona /*/
+.imagencomofunciona {
+  background-image: url(../../desafio12/IMAGE/comofuncionaimagen.jpg);
+  height: 550px;
+  width: 100%;
+  background-size: 100% 110%;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .imagencomofunciona {
+    background-size: 150% 100%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .imagencomofunciona {
+    background-size: 230% 100%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagencomofunciona {
+    background-size: 330% 100%;
+  }
+}
+@media only screen and (min-width: 271px) and (max-width: 420px) {
+  .imagencomofunciona {
+    background-size: 400% 100%;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .imagencomofunciona {
+    background-size: 500% 100%;
+  }
+}
+.imagencomofunciona .textocomofunciona {
+  font-size: 18px;
+  font-style: bold;
+  padding: 30px;
+  width: 250px;
+  height: fit-content;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+/*fin imagen como funciona /*/
+/*body como funciona /*/
+.bodycomofunciona {
+  background-color: #f3f3f3;
+  /*fin conclusion como funciona /*/
+}
+.bodycomofunciona .textocomofunciona2 {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 0px 0px 0px 40px;
+  border-top: 20px #f3f3f3 solid;
+}
+.bodycomofunciona .textocomofunciona3 {
+  font-size: 16px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 20px 0px 0px 40px;
+}
+.bodycomofunciona .espacioentrelocalyviajero {
+  height: 20px;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.bodycomofunciona .tablalau ul li {
+  font-size: 16px;
+  line-height: 30px;
+  margin-inline-end: 20px;
+  margin-inline-start: 20px;
+}
+.bodycomofunciona .tablalau .local {
+  color: #F2787A;
+  font-size: 21px;
+  letter-spacing: 5px;
+  padding-left: 40px;
+  width: 170px;
+}
+@media only screen and (max-width: 636px) {
+  .bodycomofunciona .tablalau .local {
+    transform: rotate(270deg);
+    padding: auto;
+    width: 10px;
+  }
+}
+.bodycomofunciona .tablalau .viajero {
+  color: #58DBA3;
+  font-size: 21px;
+  letter-spacing: 5px;
+  padding-left: 40px;
+  width: 170px;
+}
+@media only screen and (max-width: 636px) {
+  .bodycomofunciona .tablalau .viajero {
+    transform: rotate(270deg);
+    padding: 0;
+    width: 10px;
+  }
+}
+.bodycomofunciona .textocomofunciona4 {
+  font-size: 18px;
+  padding: 20px;
+  margin: 20px 0px 0px 40px;
+  background-color: #F2787A;
+  color: white;
+}
+.bodycomofunciona .contenedorlogocomofunciona {
+  display: flex;
+  justify-content: center;
+}
+.bodycomofunciona .logocomofunciona {
+  width: min-content;
+  margin: 30px 0px 30px 0px;
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .bodycomofunciona .logocomofunciona {
+    height: 100px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .bodycomofunciona .logocomofunciona {
+    height: 80px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 271px) and (max-width: 420px) {
+  .bodycomofunciona .logocomofunciona {
+    height: 75px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .bodycomofunciona .logocomofunciona {
+    height: 65px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.bodycomofunciona .conclusioncomofunciona {
+  display: flex;
+  justify-content: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 40px 40px 40px;
+}
+@media only screen and (max-width: 635px) {
+  .bodycomofunciona .conclusioncomofunciona {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .bodycomofunciona .conclusioncomofunciona {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0px 40px 30px 40px;
+  }
+}
+.bodycomofunciona .textoconclusioncomofunciona {
+  width: 500px;
+  font-size: 16px;
+  margin: 0px;
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .bodycomofunciona .textoconclusioncomofunciona {
+    padding: 0px 30px 0px 0px;
+    margin: 30px;
+  }
+}
+.bodycomofunciona .imagenconclusioncomofunciona {
+  width: 600px;
+  border-radius: 30px;
+  margin: 0px;
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .bodycomofunciona .imagenconclusioncomofunciona {
+    width: 500px;
+    margin: 30px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .bodycomofunciona .imagenconclusioncomofunciona {
+    width: 400px;
+    margin: 30px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .bodycomofunciona .imagenconclusioncomofunciona {
+    width: 300px;
+    margin: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .bodycomofunciona .imagenconclusioncomofunciona {
+    width: 240px;
+    margin: 30px;
+  }
+}
+.bodycomofunciona .textocomofunciona5 {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  background-color: #58DBA3;
+  margin: 20px 0px 0px 40px;
+}
+.bodycomofunciona .uneteanuestracomunidadcomofunciona {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .bodycomofunciona .uneteanuestracomunidadcomofunciona {
+    width: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 70px solid #f3f3f3;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .bodycomofunciona .uneteanuestracomunidadcomofunciona {
+    margin-top: 30px;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 170px solid #f3f3f3;
+  }
+}
+.bodycomofunciona .uneteanuestracomunidadcomofunciona .button1comofunciona {
+  color: white;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 22px;
+  padding: 10px;
+  margin: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .bodycomofunciona .uneteanuestracomunidadcomofunciona .button1comofunciona {
+    padding: 10px;
+    width: min-content;
+    height: min-content;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .bodycomofunciona .uneteanuestracomunidadcomofunciona .button1comofunciona {
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    justify-content: center;
+  }
+}
+.bodycomofunciona .uneteanuestracomunidadcomofunciona .button2comofunciona {
+  padding: 10px;
+  width: 300px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  margin: 30px 100px 0px 100px;
+}
+@media only screen and (max-width: 500px) {
+  .bodycomofunciona .uneteanuestracomunidadcomofunciona .button2comofunciona {
+    padding: 10px;
+    width: min-content;
+    height: min-content;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .bodycomofunciona .uneteanuestracomunidadcomofunciona .button2comofunciona {
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    justify-content: center;
+  }
+}
+.bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  border-bottom: 100px solid #f3f3f3;
+}
+@media only screen and (max-width: 500px) {
+  .bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 100px solid #f3f3f3;
+  }
+}
+.bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona .playstore,
+.bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona .microsoft {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona .playstore {
+  background-image: url(../../desafio12/svg/playstore.svg);
+}
+.bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona .microsoft {
+  background-image: url(../../desafio12/svg/microsoft.svg);
+}
+.bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona .aplee {
+  background-image: url(../../desafio12/SVG/AppStore.svg);
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona hr {
+  margin: 0px 0px 0px 40px;
+}
+
+/*fin body como funciona /*/
+/*imagen viajero/*/
+.imagenviajero {
+  background-image: url(../../desafio12/IMAGE/viajero.jpg);
+  height: 550px;
+  width: 100%;
+  background-size: 100% 110%;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .imagenviajero {
+    background-size: 150% 100%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .imagenviajero {
+    background-size: 230% 100%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagenviajero {
+    background-size: 330% 100%;
+  }
+}
+@media only screen and (min-width: 271px) and (max-width: 420px) {
+  .imagenviajero {
+    background-size: 400% 100%;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .imagenviajero {
+    background-size: 500% 100%;
+  }
+}
+.imagenviajero .textoviajero {
+  font-size: 18px;
+  font-style: bold;
+  padding: 30px;
+  width: 250px;
+  height: fit-content;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+/*fin imagen viajero/*/
+/*body viajero/*/
+.bodyviajero {
+  background-color: #f3f3f3;
+}
+.bodyviajero .textoviajero2 {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 0px 0px 0px 40px;
+  border-top: 20px #f3f3f3 solid;
+}
+.bodyviajero .textoviajero3 {
+  font-size: 16px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 20px 0px 0px 40px;
+}
+.bodyviajero .listaviajero {
+  display: flex;
+  justify-content: inherit;
+}
+.bodyviajero .listaviajero .col-12 {
+  padding: 0 !important;
+}
+@media only screen and (min-width: 840px) {
+  .bodyviajero .listaviajero .listado {
+    padding-left: 40px;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 839px) {
+  .bodyviajero .listaviajero .listado {
+    padding-left: 40px;
+  }
+}
+.bodyviajero .listaviajero .list-group-item.active {
+  color: #fff;
+  background-color: #58DBA3 !important;
+  border: solid #58DBA3 1px !important;
+}
+.bodyviajero .listaviajero .tab-pane {
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.bodyviajero .listaviajero .redes1viajero .playstore {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.bodyviajero .listaviajero .redes1viajero .microsoft {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.bodyviajero .listaviajero .redes1viajero .aplee {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+
+/*fin body viajero/*/
+/*imagen local/*/
+.imagenlocal {
+  background-image: url(../../desafio12/IMAGE/local.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: 100% 110%;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .imagenlocal {
+    background-size: 150% 100%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .imagenlocal {
+    background-size: 230% 100%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagenlocal {
+    background-size: 330% 100%;
+  }
+}
+@media only screen and (min-width: 271px) and (max-width: 420px) {
+  .imagenlocal {
+    background-size: 400% 100%;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .imagenlocal {
+    background-size: 500% 100%;
+  }
+}
+.imagenlocal .textolocal {
+  font-size: 18px;
+  font-style: bold;
+  padding: 30px;
+  width: 250px;
+  height: fit-content;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+/*fin imagen local/*/
+/*body local/*/
+.bodylocal {
+  background-color: #f3f3f3;
+}
+.bodylocal .textolocal2 {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 0px 0px 0px 40px;
+  border-top: 20px #f3f3f3 solid;
+}
+.bodylocal .textolocal3 {
+  font-size: 16px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 20px 0px 0px 40px;
+}
+.bodylocal .listalocal {
+  display: flex;
+  justify-content: inherit;
+}
+.bodylocal .listalocal .col-12 {
+  padding: 0 !important;
+}
+@media only screen and (min-width: 840px) {
+  .bodylocal .listalocal .listado {
+    padding-left: 40px;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 839px) {
+  .bodylocal .listalocal .listado {
+    padding-left: 40px;
+  }
+}
+.bodylocal .listalocal .list-group-item.active {
+  color: #fff;
+  background-color: #F2787A !important;
+  border: solid #F2787A 1px !important;
+}
+.bodylocal .listalocal .tab-pane {
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+.bodylocal .listalocal .uneteanuestracomunidadlocal {
+  margin: 0 auto;
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #f3f3f3;
+  border-bottom: solid 50px #f3f3f3;
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .bodylocal .listalocal .uneteanuestracomunidadlocal {
+    width: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 50px #f3f3f3;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .bodylocal .listalocal .uneteanuestracomunidadlocal {
+    margin-top: 30px;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 50px #f3f3f3;
+  }
+}
+
+/*fin body local/*/
+/*imagen experiencia de nuestros usuarios /*/
+.imagenexperienciadenuestrosusuarios {
+  background-image: url(../../desafio12/IMAGE/experienciadenuestrosusuarios.jpg);
+  height: 800px;
+  width: 100%;
+  background-size: 100% 100%;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .imagenexperienciadenuestrosusuarios {
+    background-size: 150% 100%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .imagenexperienciadenuestrosusuarios {
+    background-size: 230% 100%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagenexperienciadenuestrosusuarios {
+    background-size: 330% 100%;
+    height: 880px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 420px) {
+  .imagenexperienciadenuestrosusuarios {
+    background-size: 400% 100%;
+    height: 920px;
+  }
+}
+@media only screen and (min-width: 306px) and (max-width: 320px) {
+  .imagenexperienciadenuestrosusuarios {
+    background-size: 400% 100%;
+    height: 940px;
+  }
+}
+@media only screen and (max-width: 306px) {
+  .imagenexperienciadenuestrosusuarios {
+    background-size: 400% 100%;
+    height: 1010px;
+  }
+}
+.imagenexperienciadenuestrosusuarios .textoexperienciadenuestrosusuarios {
+  font-size: 18px;
+  font-style: bold;
+  padding: 30px;
+  width: 250px;
+  height: 220px;
+  opacity: 0.8;
+  border-radius: 5px;
+  position: absolute;
+}
+@media only screen and (max-width: 500px) {
+  .imagenexperienciadenuestrosusuarios .textoexperienciadenuestrosusuarios {
+    height: 300px;
+    width: 190px;
+  }
+}
+.imagenexperienciadenuestrosusuarios .carrousellau {
+  height: 100px;
+  margin: auto;
+  margin-top: 250px;
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel {
+    width: 350px;
+    margin-top: 90px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 420px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel {
+    width: 260px;
+    margin-top: 90px;
+  }
+}
+@media only screen and (min-width: 306px) and (max-width: 320px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel {
+    width: 240px;
+    margin-top: 90px;
+  }
+}
+@media only screen and (max-width: 305px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel {
+    width: 210px;
+    margin-top: 90px;
+  }
+}
+.imagenexperienciadenuestrosusuarios .carrousellau .carousel .textocarrouselexperiencia {
+  background-color: black;
+  opacity: 0.7;
+}
+.imagenexperienciadenuestrosusuarios .carrousellau .carousel .pexperienciadenuestrosusuarios {
+  color: blanchedalmond;
+}
+@media only screen and (max-width: 304px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel .imagencarrousel {
+    width: 176px;
+    height: 530px;
+  }
+}
+@media only screen and (min-width: 305px) and (max-width: 320px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel .imagencarrousel {
+    width: 206px;
+    height: 460px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 420px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel .imagencarrousel {
+    width: 226px;
+    height: 440px;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel .imagencarrousel {
+    width: 316px;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .imagenexperienciadenuestrosusuarios .carrousellau .carousel .imagencarrousel {
+    width: 366px;
+    height: 400px;
+  }
+}
+
+/*imagen experiencia de nuestros usuarios /*/
+
+/*# sourceMappingURL=style.css.map */

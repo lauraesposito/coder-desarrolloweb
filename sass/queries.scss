@@ -1,0 +1,643 @@
+/*header /*/
+@mixin queries-bloquelogo {
+      @media only screen and (min-width:421px) and (max-width:500px) {
+
+            width: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+      }
+
+      @media only screen and (min-width:271px) and (max-width:420px) {
+            width: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+      }
+
+      @media only screen and (max-width: 270px) {
+            width: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+
+      }
+
+}
+
+@mixin queries-logo {
+      @media only screen and (min-width:271px) and (max-width:500px) {
+            margin-bottom: 0;
+            height: 75px;
+      }
+
+      @media only screen and (max-width: 270px) {
+
+            height: 70px;
+            margin-bottom: 0px;
+      }
+
+}
+
+@mixin queries-menu1 {
+      @media only screen and (max-width: 680px) {
+            justify-content: space-between;
+      }
+}
+
+/*fin header/*/
+
+/*mision /*/
+
+
+@mixin queries-imagenmision {
+
+      @media only screen and (min-width:636px) and (max-width: 1060px) {
+            display: flex;
+            flex-wrap: wrap;
+            background-size: 150% 100%;
+      }
+
+      @media only screen and (min-width:501px) and (max-width: 635px) {
+            display: flex;
+            flex-wrap: wrap;
+            background-size: 230% 100%;
+      }
+
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            height: 670px;
+            display: flex;
+            flex-wrap: wrap;
+            background-size: 330% 100%;
+      }
+
+      @media only screen and (min-width:271px) and (max-width:420px) {
+            display: flex;
+            flex-wrap: wrap;
+            height: 900px;
+            background-size: 400% 100%;
+      }
+
+      @media only screen and (max-width: 270px) {
+            display: flex;
+            flex-wrap: wrap;
+            height: 900px;
+            background-size: 500% 100%;
+      }
+}
+
+@mixin queries-textoindex1 {
+      @media only screen and (min-width:636px) and (max-width: 1060px) {
+            margin-left: 10px;
+            position: absolute;
+            height: 150px;
+            width: 250px;
+      }
+
+      @media only screen and (min-width:501px) and (max-width: 635px) {
+            margin-left: 10px;
+            position: absolute;
+            height: 180px;
+            width: 210px;
+      }
+
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            margin-left: 10px;
+            position: absolute;
+            height: 240px;
+            width: 190px;
+      }
+
+      @media only screen and (min-width:271px) and (max-width:420px) {
+            margin-left: 10px;
+            position: absolute;
+            height: 240px;
+            width: 190px;
+      }
+
+      @media only screen and (max-width: 270px) {
+            margin-left: 10px;
+            position: absolute;
+            height: 270px;
+            width: 150px;
+            font-size: 17px;
+      }
+}
+
+@mixin queries-uneteanuestracomunidad {
+      @media only screen and (min-width:501px) and (max-width: 1060px) {
+            margin-top: 200px;
+
+      }
+
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            margin-top: 250px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+      }
+
+      @media only screen and (min-width:271px) and (max-width:420px) {
+            margin-top: 280px;
+            margin-bottom: 100px;
+            width: min-content;
+            height: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+      }
+
+
+      @media only screen and (max-width: 270px) {
+            margin-top: 280px;
+            width: min-content;
+            height: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+      }
+}
+
+@mixin queries-buttonindex {
+      @media only screen and (max-width:420px) {
+            display: flex;
+            flex-wrap: wrap;
+            width: min-content;
+            height: min-content;
+            margin: 15px 0px 15px 0px;
+            justify-content: center;
+
+      }
+}
+
+@mixin queries-redes1 {
+      @media only screen and (max-width:500px) {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+      }
+}
+
+/*mision /*/
+/*como funciona /*/
+
+@mixin queries-imagencomofunciona {
+      @media only screen and (min-width:636px) and (max-width: 1060px) {
+            background-size: 150% 100%;
+      }
+
+      @media only screen and (min-width:501px) and (max-width: 635px) {
+            background-size: 230% 100%;
+      }
+
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            background-size: 330% 100%;
+      }
+
+      @media only screen and (min-width:271px) and (max-width:420px) {
+            background-size: 400% 100%;
+      }
+
+      @media only screen and (max-width: 270px) {
+            background-size: 500% 100%;
+      }
+}
+
+@mixin queries-local{
+      @media only screen and (max-width:636px)  {
+      transform: rotate(270deg);
+      padding: auto ;
+      width: 10px;
+
+      }
+}
+
+
+@mixin queries-viajero{
+      @media only screen and (max-width:636px)  {
+      transform: rotate(270deg);
+      padding: 0 ;
+      width: 10px;
+
+      }
+}
+@mixin queries-conclusioncomofunciona {
+      @media only screen and (max-width: 635px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+      }
+
+      @media only screen and (min-width:636px) and (max-width: 1060px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            margin: 0px 40px 30px 40px;
+      }
+
+}
+
+@mixin queries-logocomofunciona {
+      @media only screen and (min-width:501px) and (max-width: 635px) {
+            height: 100px;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+      }
+
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            height: 80px;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+      }
+
+      @media only screen and (min-width:271px) and (max-width:420px) {
+
+            height: 75px;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+      }
+
+      @media only screen and (max-width: 270px) {
+            height: 65px;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+
+      }
+}
+
+@mixin queries-textoconclusioncomofunciona {
+      @media only screen and (min-width:636px) and (max-width: 1060px) {
+            padding: 0px 30px 0px 0px;
+            margin: 30px;
+
+      }
+}
+
+@mixin queries-imagenconclusioncomofunciona {
+      @media only screen and (min-width:636px) and (max-width: 1060px) {
+            width: 500px;
+            margin: 30px;
+      }
+
+      @media only screen and (min-width:501px) and (max-width: 635px) {
+            width: 400px;
+            margin: 30px;
+      }
+
+      @media only screen and (min-width:400px) and (max-width:500px) {
+            width: 300px;
+            margin: 30px;
+      }
+
+      @media only screen and (max-width: 400px) {
+            width: 240px;
+            margin: 30px;
+      }
+
+}
+
+@mixin queries-uneteanuestracomunidadcomofunciona {
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            width: min-content;
+            display: flex;
+            flex-wrap: wrap;
+              margin-left: auto;
+            margin-right: auto;
+            border-bottom: 70px solid $backgroundheader;   
+      }
+
+      @media only screen and (max-width:420px) {
+            margin-top: 30px;
+            width: min-content;
+            height: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 170px solid $backgroundheader;   
+      }
+}
+
+@mixin queries-buttonscomofunciona {
+      @media only screen and (max-width:500px) {
+            padding: 10px;
+            width: min-content;
+            height: min-content;
+
+      }
+
+      @media only screen and (max-width:420px) {
+            display: flex;
+            flex-wrap: wrap;
+            width: min-content;
+            height: min-content;
+            margin: auto;
+            justify-content: center;
+
+      }
+}
+
+@mixin queries-redes1comofunciona {
+      @media only screen and (max-width:500px) {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-bottom: 100px solid $backgroundheader;   
+      }
+}
+
+/*como funciona /*/
+
+/*viajero/*/
+
+@mixin queries-imagenviajero {
+      @media only screen and (min-width:636px) and (max-width: 1060px) {
+            background-size: 150% 100%;
+      }
+
+      @media only screen and (min-width:501px) and (max-width: 635px) {
+            background-size: 230% 100%;
+      }
+
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            background-size: 330% 100%;
+      }
+
+      @media only screen and (min-width:271px) and (max-width:420px) {
+            background-size: 400% 100%;
+      }
+
+      @media only screen and (max-width: 270px) {
+            background-size: 500% 100%;
+      }
+}
+
+
+@mixin queries-uneteanuestracomunidadviajero {
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            width: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: solid 50px $backgroundheader;
+                     
+      }
+
+      @media only screen and (max-width:420px) {
+            margin-top: 30px;
+            width: min-content;
+            height: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: solid 50px $backgroundheader;
+                             
+      }
+}
+
+
+@mixin queries-listadohorizontal {
+      @media only screen and (min-width:840px) {
+         padding-left: 40px;
+           -ms-flex-direction: row;
+         flex-direction: row;
+        
+          }
+}
+
+@mixin queries-listadovertical {
+      @media only screen and (max-width:839px) {
+         padding-left: 40px;
+           
+          }
+}
+
+/*fin viajero/*/
+
+
+/*local/*/
+
+@mixin queries-imagenlocal {
+      @media only screen and (min-width:636px) and (max-width: 1060px) {
+            background-size: 150% 100%;
+      }
+
+      @media only screen and (min-width:501px) and (max-width: 635px) {
+            background-size: 230% 100%;
+      }
+
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            background-size: 330% 100%;
+      }
+
+      @media only screen and (min-width:271px) and (max-width:420px) {
+            background-size: 400% 100%;
+      }
+
+      @media only screen and (max-width: 270px) {
+            background-size: 500% 100%;
+      }
+}
+
+
+@mixin queries-uneteanuestracomunidadlocal {
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            width: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: solid 50px $backgroundheader;
+           
+      }
+
+      @media only screen and (max-width:420px) {
+            margin-top: 30px;
+            width: min-content;
+            height: min-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: solid 50px $backgroundheader;
+         
+      }
+}
+
+@mixin queries-buttonslocal {
+      @media only screen and (max-width:500px) {
+           
+            width: min-content;
+            height: min-content;
+
+      }
+
+      @media only screen and (max-width:420px) {
+           
+            display: flex;
+            flex-wrap: wrap;
+            width: min-content;
+            height: min-content;
+            justify-content: center;
+
+      }
+}
+
+@mixin queries-redes1local {
+      @media only screen and (max-width:500px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+                   }
+     
+}
+
+
+@mixin queries-listadohorizontal {
+      @media only screen and (min-width:840px) {
+         padding-left: 40px;
+           -ms-flex-direction: row;
+         flex-direction: row;
+        
+          }
+}
+
+@mixin queries-listadovertical {
+      @media only screen and (max-width:839px) {
+         padding-left: 40px;
+           
+          }
+}
+
+/*fin local/*/
+
+
+
+
+
+
+
+
+/*experiencia de nuestros usuarios /*/
+
+@mixin queries-imagenexperienciadenuestrosusuarios {
+
+      @media only screen and (min-width:636px) and (max-width: 1060px) {
+            background-size: 150% 100%;
+      }
+
+      @media only screen and (min-width:501px) and (max-width: 635px) {
+            background-size: 230% 100%;
+      }
+
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            background-size: 330% 100%;
+            height: 880px;
+      }
+
+      @media only screen and (min-width:321px) and (max-width:420px) {
+            background-size: 400% 100%;
+            height: 920px;
+
+      }
+      @media only screen and (min-width:306px) and (max-width:320px) {
+            background-size: 400% 100%;
+            height: 940px;
+
+      }
+      @media only screen and (max-width:306px) {
+            background-size: 400% 100%;
+            height: 1010px;
+
+      }
+
+
+}
+ 
+@mixin queries-carousel {
+            @media only screen and (min-width:501px) and (max-width: 635px) {
+                  width: 400px;
+
+            }
+
+            @media only screen and (min-width:421px) and (max-width:500px) {
+                  width: 350px;
+                  margin-top: 90px;
+            }
+
+            @media only screen and (min-width:321px) and (max-width:420px) {
+                  width: 260px;
+                  margin-top: 90px;
+            }
+
+            @media only screen and (min-width:306px) and (max-width:320px) {
+                  width: 240px;
+                  margin-top: 90px;
+            }
+
+            @media only screen and (max-width: 305px) {
+                  width: 210px;
+                  margin-top: 90px;
+            }
+
+
+      }
+      
+@mixin queries-textoexperienciadenuestrosusuarios {
+            @media only screen and (max-width:500px) {
+                  height: 300px;
+                  width: 190px;
+            }
+      }
+
+@mixin queries-imagencarrousel {
+      @media only screen and (max-width: 304px) {
+            width: 176px;
+            height: 530px;
+      }
+
+      @media only screen and (min-width:305px) and (max-width:320px) {
+            width: 206px;
+            height: 460px;
+      }
+
+      @media only screen and (min-width:321px) and (max-width:420px) {
+            width: 226px;
+            height: 440px;
+      }
+
+      @media only screen and (min-width:421px) and (max-width:500px) {
+            width: 316px;
+            height: 400px;
+      }
+
+      @media only screen and (min-width:501px) and (max-width: 635px) {
+            width: 366px;
+            height: 400px;
+
+      }
+
+
+
+}
