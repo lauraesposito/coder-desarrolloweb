@@ -1,3 +1,5 @@
+/*alerta/*/
+/*alerta/*/
 /*header /*/
 /*fin header/*/
 /*mision /*/
@@ -9,6 +11,8 @@
 /*local/*/
 /*fin local/*/
 /*experiencia de nuestros usuarios /*/
+/*ayuda /*/
+/*ayuda /*/
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +30,114 @@ h2 {
 
 p {
   color: black;
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+.alerta {
+  background: rgba(33, 41, 52, 0.85);
+  margin: 0 auto;
+  position: fixed;
+  top: 30px;
+  bottom: 50px;
+  left: 100px;
+  right: 100px;
+  border-radius: 20px;
+  z-index: 999;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+}
+@media only screen and (max-width: 540px) {
+  .alerta {
+    position: fixed;
+    top: 30px;
+    bottom: 30px;
+    left: 40px;
+    right: 40px;
+  }
+}
+.alerta .botonalerta a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.alerta h1 {
+  color: white;
+  font-family: "Comfortaa", cursive;
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+}
+@media only screen and (min-width: 310px) and (max-width: 540px) {
+  .alerta h1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 309px) {
+  .alerta h1 {
+    font-size: 30px;
+  }
+}
+.alerta .textoalerta {
+  text-align: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.alerta .imagenes {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 649px) {
+  .alerta .imagenes {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.alerta .imagenes .img1 {
+  height: 400px;
+}
+@media only screen and (max-width: 649px) {
+  .alerta .imagenes .img1 {
+    display: none;
+  }
+}
+.alerta .imagenes .img2 {
+  height: 400px;
+}
+@media only screen and (max-width: 649px) {
+  .alerta .imagenes .img2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+  .alerta .imagenes .img3 {
+    display: none;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 506px) {
+  .alerta .imagenes .img3 {
+    height: 400px !important;
+  }
+}
+@media only screen and (min-width: 440px) and (max-width: 505px) {
+  .alerta .imagenes .img3 {
+    height: 380px !important;
+  }
+}
+@media only screen and (max-width: 439px) {
+  .alerta .imagenes .img3 {
+    height: 370px !important;
+  }
 }
 
 .encabezado1,
@@ -51,6 +163,7 @@ ol li,
 .textocomofunciona2,
 .textoviajero2,
 .textolocal2,
+.textoayuda2,
 .button1comofunciona,
 .button1viajero,
 .button1local,
@@ -65,6 +178,7 @@ ol li,
 .textolocal,
 .button2index,
 .textocomofunciona,
+.textoayuda,
 .textoexperienciadenuestrosusuarios {
   background-color: #f3f3f3;
 }
@@ -82,6 +196,7 @@ h2,
 }
 
 p,
+.card-text,
 .textoviajero,
 .textolocal,
 .textoindex1,
@@ -198,41 +313,60 @@ ol li,
   font-family: "Comfortaa", cursive;
   text-transform: uppercase;
   font-size: 15px;
+}
+.headerlogo .menu1 .naranja {
   padding: 10px 20px 10px 20px;
 }
-.headerlogo .menu1 a:hover {
+.headerlogo .menu1 .naranja:hover {
+  color: #FCAF4A;
+  text-decoration: none;
+}
+.headerlogo .menu1 .naranja:active {
   color: #FCAF4A;
   text-decoration: none;
   font-weight: bold;
 }
-.headerlogo .menu1 a:active {
-  border-bottom: #FCAF4A solid 3px;
+.headerlogo .menu1 .verde {
+  padding: 10px 20px 10px 20px;
+}
+.headerlogo .menu1 .verde:hover {
+  color: #58DBA3;
+  text-decoration: none;
+}
+.headerlogo .menu1 .verde:active {
+  color: #58DBA3;
+  text-decoration: none;
+  font-weight: bold;
+}
+.headerlogo .menu1 .rojo {
+  padding: 10px 20px 10px 20px;
+}
+.headerlogo .menu1 .rojo:hover {
+  color: #F2787A;
+  text-decoration: none;
+}
+.headerlogo .menu1 .rojo:active {
+  color: #F2787A;
   text-decoration: none;
   font-weight: bold;
 }
 .headerlogo .menu1 .activisimoverde {
   background-color: #58DBA3;
-  padding: 5px;
-  border-radius: 10px;
-  font-style: none;
+  border-radius: 5px;
 }
 .headerlogo .menu1 .activisimoverde span {
   color: white;
 }
 .headerlogo .menu1 .activisimorojo {
   background-color: #F2787A;
-  padding: 5px;
-  border-radius: 10px;
-  font-style: none;
+  border-radius: 5px;
 }
 .headerlogo .menu1 .activisimorojo span {
   color: white;
 }
 .headerlogo .menu1 .activisimonaranja {
   background-color: #FCAF4A;
-  padding: 5px;
-  border-radius: 10px;
-  font-style: none;
+  border-radius: 5px;
 }
 .headerlogo .menu1 .activisimonaranja span {
   color: white;
@@ -264,8 +398,8 @@ ol li,
 .imagenmision {
   width: 100%;
   height: 550px;
-  background-image: url(../../desafio12/IMAGE/mision.jpg);
-  background-size: 100% 100%;
+  background-image: url(/image/mision.jpg);
+  background-size: cover;
   padding: 40px 40px 40px 40px;
   display: flex;
   justify-content: flex-start;
@@ -275,14 +409,12 @@ ol li,
   .imagenmision {
     display: flex;
     flex-wrap: wrap;
-    background-size: 150% 100%;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 635px) {
   .imagenmision {
     display: flex;
     flex-wrap: wrap;
-    background-size: 230% 100%;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 500px) {
@@ -290,7 +422,6 @@ ol li,
     height: 670px;
     display: flex;
     flex-wrap: wrap;
-    background-size: 330% 100%;
   }
 }
 @media only screen and (min-width: 271px) and (max-width: 420px) {
@@ -298,7 +429,6 @@ ol li,
     display: flex;
     flex-wrap: wrap;
     height: 900px;
-    background-size: 400% 100%;
   }
 }
 @media only screen and (max-width: 270px) {
@@ -306,12 +436,11 @@ ol li,
     display: flex;
     flex-wrap: wrap;
     height: 900px;
-    background-size: 500% 100%;
   }
 }
 .imagenmision .textoindex1 {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   font-style: bold;
   padding: 30px 30px 30px 30px;
   opacity: 0.8;
@@ -464,13 +593,13 @@ ol li,
   margin: 10px;
 }
 .imagenmision .uneteanuestracomunidad .redes1 .playstore {
-  background-image: url(../../desafio12/svg/playstore.svg);
+  background-image: url(/svg/playstore.svg);
 }
 .imagenmision .uneteanuestracomunidad .redes1 .microsoft {
-  background-image: url(../../desafio12/svg/microsoft.svg);
+  background-image: url(/svg/microsoft.svg);
 }
 .imagenmision .uneteanuestracomunidad .redes1 .aplee {
-  background-image: url(../../desafio12/SVG/AppStore.svg);
+  background-image: url(/svg/appstore.svg);
   width: 70px;
   height: 70px;
   margin: 10px;
@@ -479,42 +608,17 @@ ol li,
 /*fin imagen mision /*/
 /*imagen como funciona /*/
 .imagencomofunciona {
-  background-image: url(../../desafio12/IMAGE/comofuncionaimagen.jpg);
+  background-image: url(/image/comofuncionaimagen.jpg);
   height: 550px;
   width: 100%;
-  background-size: 100% 110%;
+  background-size: cover;
   padding: 40px 40px 40px 40px;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 636px) and (max-width: 1060px) {
-  .imagencomofunciona {
-    background-size: 150% 100%;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 635px) {
-  .imagencomofunciona {
-    background-size: 230% 100%;
-  }
-}
-@media only screen and (min-width: 421px) and (max-width: 500px) {
-  .imagencomofunciona {
-    background-size: 330% 100%;
-  }
-}
-@media only screen and (min-width: 271px) and (max-width: 420px) {
-  .imagencomofunciona {
-    background-size: 400% 100%;
-  }
-}
-@media only screen and (max-width: 270px) {
-  .imagencomofunciona {
-    background-size: 500% 100%;
-  }
-}
 .imagencomofunciona .textocomofunciona {
-  font-size: 18px;
+  font-size: 16px;
   font-style: bold;
   padding: 30px;
   width: 250px;
@@ -657,6 +761,7 @@ ol li,
 }
 .bodycomofunciona .textoconclusioncomofunciona {
   width: 500px;
+  padding: 30px;
   font-size: 16px;
   margin: 0px;
 }
@@ -668,7 +773,7 @@ ol li,
 }
 .bodycomofunciona .imagenconclusioncomofunciona {
   width: 600px;
-  border-radius: 30px;
+  border-radius: 10px;
   margin: 0px;
 }
 @media only screen and (min-width: 636px) and (max-width: 1060px) {
@@ -812,13 +917,13 @@ ol li,
   margin: 10px;
 }
 .bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona .playstore {
-  background-image: url(../../desafio12/svg/playstore.svg);
+  background-image: url(/svg/playstore.svg);
 }
 .bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona .microsoft {
-  background-image: url(../../desafio12/svg/microsoft.svg);
+  background-image: url(/svg/microsoft.svg);
 }
 .bodycomofunciona .uneteanuestracomunidadcomofunciona .redes1comofunciona .aplee {
-  background-image: url(../../desafio12/SVG/AppStore.svg);
+  background-image: url(/svg/appstore.svg);
   width: 70px;
   height: 70px;
   margin: 10px;
@@ -830,42 +935,17 @@ ol li,
 /*fin body como funciona /*/
 /*imagen viajero/*/
 .imagenviajero {
-  background-image: url(../../desafio12/IMAGE/viajero.jpg);
+  background-image: url(/image/viajero.jpg);
   height: 550px;
   width: 100%;
-  background-size: 100% 110%;
+  background-size: cover;
   padding: 40px 40px 40px 40px;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 636px) and (max-width: 1060px) {
-  .imagenviajero {
-    background-size: 150% 100%;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 635px) {
-  .imagenviajero {
-    background-size: 230% 100%;
-  }
-}
-@media only screen and (min-width: 421px) and (max-width: 500px) {
-  .imagenviajero {
-    background-size: 330% 100%;
-  }
-}
-@media only screen and (min-width: 271px) and (max-width: 420px) {
-  .imagenviajero {
-    background-size: 400% 100%;
-  }
-}
-@media only screen and (max-width: 270px) {
-  .imagenviajero {
-    background-size: 500% 100%;
-  }
-}
 .imagenviajero .textoviajero {
-  font-size: 18px;
+  font-size: 16px;
   font-style: bold;
   padding: 30px;
   width: 250px;
@@ -923,6 +1003,31 @@ ol li,
   padding-left: 40px;
   padding-right: 40px;
 }
+.bodyviajero .listaviajero .card {
+  background-color: transparent;
+  border: none;
+}
+@media only screen and (max-width: 770px) {
+  .bodyviajero .listaviajero .mockup1 {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .bodyviajero .listaviajero .mockup1 .mockup2 {
+    width: 50%;
+    height: 50%;
+  }
+}
+.bodyviajero .listaviajero .mockup1 .mockup3 {
+  text-align: center;
+}
+@media only screen and (max-width: 770px) {
+  .bodyviajero .listaviajero .mockup1 .mockup3 {
+    width: 80%;
+    height: 80%;
+    font-size: 80%;
+  }
+}
 .bodyviajero .listaviajero .redes1viajero .playstore {
   width: 70px;
   height: 70px;
@@ -942,42 +1047,17 @@ ol li,
 /*fin body viajero/*/
 /*imagen local/*/
 .imagenlocal {
-  background-image: url(../../desafio12/IMAGE/local.jpg);
-  height: 100%;
+  background-image: url(/image/local1.jpg);
+  height: 550px;
   width: 100%;
-  background-size: 100% 110%;
+  background-size: cover;
   padding: 40px 40px 40px 40px;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 636px) and (max-width: 1060px) {
-  .imagenlocal {
-    background-size: 150% 100%;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 635px) {
-  .imagenlocal {
-    background-size: 230% 100%;
-  }
-}
-@media only screen and (min-width: 421px) and (max-width: 500px) {
-  .imagenlocal {
-    background-size: 330% 100%;
-  }
-}
-@media only screen and (min-width: 271px) and (max-width: 420px) {
-  .imagenlocal {
-    background-size: 400% 100%;
-  }
-}
-@media only screen and (max-width: 270px) {
-  .imagenlocal {
-    background-size: 500% 100%;
-  }
-}
 .imagenlocal .textolocal {
-  font-size: 18px;
+  font-size: 16px;
   font-style: bold;
   padding: 30px;
   width: 250px;
@@ -1033,6 +1113,47 @@ ol li,
 .bodylocal .listalocal .tab-pane {
   padding-bottom: 30px;
   padding-left: 40px;
+  padding-right: 40px;
+}
+.bodylocal .listalocal .card {
+  background-color: transparent;
+  border: none;
+}
+@media only screen and (max-width: 770px) {
+  .bodylocal .listalocal .mockup1 {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .bodylocal .listalocal .mockup1 .mockup2 {
+    width: 50%;
+    height: 50%;
+  }
+}
+.bodylocal .listalocal .mockup1 .mockup3 {
+  text-align: center;
+}
+@media only screen and (max-width: 770px) {
+  .bodylocal .listalocal .mockup1 .mockup3 {
+    width: 80%;
+    height: 80%;
+    font-size: 80%;
+  }
+}
+.bodylocal .listalocal .redes1viajero .playstore {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.bodylocal .listalocal .redes1viajero .microsoft {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.bodylocal .listalocal .redes1viajero .aplee {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
 }
 .bodylocal .listalocal .uneteanuestracomunidadlocal {
   margin: 0 auto;
@@ -1072,51 +1193,37 @@ ol li,
 /*fin body local/*/
 /*imagen experiencia de nuestros usuarios /*/
 .imagenexperienciadenuestrosusuarios {
-  background-image: url(../../desafio12/IMAGE/experienciadenuestrosusuarios.jpg);
+  background-image: url(/image/experienciadenuestrosusuarios.jpg);
   height: 800px;
   width: 100%;
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 40px 40px 40px 40px;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 636px) and (max-width: 1060px) {
-  .imagenexperienciadenuestrosusuarios {
-    background-size: 150% 100%;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 635px) {
-  .imagenexperienciadenuestrosusuarios {
-    background-size: 230% 100%;
-  }
-}
 @media only screen and (min-width: 421px) and (max-width: 500px) {
   .imagenexperienciadenuestrosusuarios {
-    background-size: 330% 100%;
     height: 880px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 420px) {
   .imagenexperienciadenuestrosusuarios {
-    background-size: 400% 100%;
     height: 920px;
   }
 }
 @media only screen and (min-width: 306px) and (max-width: 320px) {
   .imagenexperienciadenuestrosusuarios {
-    background-size: 400% 100%;
     height: 940px;
   }
 }
 @media only screen and (max-width: 306px) {
   .imagenexperienciadenuestrosusuarios {
-    background-size: 400% 100%;
     height: 1010px;
   }
 }
 .imagenexperienciadenuestrosusuarios .textoexperienciadenuestrosusuarios {
-  font-size: 18px;
+  font-size: 16px;
   font-style: bold;
   padding: 30px;
   width: 250px;
@@ -1204,5 +1311,145 @@ ol li,
 }
 
 /*imagen experiencia de nuestros usuarios /*/
+/*imagen ayuda /*/
+.imagenayuda {
+  background-image: url(/image/ayuda.jpeg);
+  height: 550px;
+  width: 100%;
+  background-size: cover;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.imagenayuda .textoayuda {
+  font-size: 16px;
+  font-style: bold;
+  padding: 30px;
+  width: 250px;
+  height: 220px;
+  opacity: 0.8;
+  border-radius: 5px;
+  position: absolute;
+}
+@media only screen and (min-width: 636px) and (max-width: 1060px) {
+  .imagenayuda .textoayuda {
+    margin-left: 10px;
+    position: absolute;
+    height: 150px;
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 635px) {
+  .imagenayuda .textoayuda {
+    margin-left: 10px;
+    position: absolute;
+    height: 180px;
+    width: 210px;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 500px) {
+  .imagenayuda .textoayuda {
+    margin-left: 10px;
+    position: absolute;
+    height: 240px;
+    width: 190px;
+  }
+}
+@media only screen and (min-width: 271px) and (max-width: 420px) {
+  .imagenayuda .textoayuda {
+    margin-left: 10px;
+    position: absolute;
+    height: 240px;
+    width: 190px;
+  }
+}
+@media only screen and (max-width: 270px) {
+  .imagenayuda .textoayuda {
+    margin-left: 10px;
+    position: absolute;
+    height: 270px;
+    width: 150px;
+    font-size: 17px;
+  }
+}
+
+.bodyayuda {
+  background-color: #f3f3f3;
+}
+.bodyayuda .textoayuda2 {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 0px 0px 0px 40px;
+  border-top: 20px #f3f3f3 solid;
+}
+.bodyayuda .pregyresp {
+  margin: 30px 30px 40px 40px;
+}
+.bodyayuda .faq {
+  font-family: "Comfortaa", cursive;
+  color: #6E827A;
+  font-size: 16px;
+  font-style: bold;
+  font-weight: bold;
+}
+.bodyayuda .faqrespuestas {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-left: 30px;
+}
+.bodyayuda .formulario {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+.bodyayuda .formulario .textoayudaformulario {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 0px 0px 0px 40px;
+  background-color: #58DBA3;
+}
+.bodyayuda .formulario form {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-bottom: 70px;
+}
+@media only screen and (min-width: 401px) and (max-width: 740px) {
+  .bodyayuda .formulario form {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .bodyayuda .formulario form {
+    width: 90%;
+  }
+}
+.bodyayuda .formulario form p {
+  text-align: center;
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Comfortaa", cursive;
+  color: white;
+  background-color: #F2787A;
+  opacity: 0.8;
+}
+.bodyayuda .formulario form .botonformulario1 {
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  justify-content: center;
+}
+.bodyayuda .formulario form .botonformulario {
+  margin: 10px 10px 10px 10px;
+  background-color: #F2787A;
+  border: solid #F2787A;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */

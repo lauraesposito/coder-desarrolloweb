@@ -24,6 +24,91 @@ p {
     color: black;
 }
 
+.card-text{
+    font-size: 15px;
+}
+
+
+.alerta {
+    background: rgba(33, 41, 52, .85);
+    margin: 0 auto;
+    position: fixed;
+    top: 30px;
+    bottom: 50px;
+    left: 100px;
+    right: 100px;
+    border-radius: 20px;
+    z-index: 999;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+    @include queries-alerta;
+    
+
+    .botonalerta{
+       a{
+     
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+
+    }
+    }
+    h1{
+        color: white;
+        font-family: $font-comfortaa;
+        font-size: 40px;
+        font-style: bold;
+        text-align: center;
+        @include queries-gonative;
+    }
+    .textoalerta{
+        text-align: center;
+        color: white;
+        font-family: $font-opensans;
+        font-size: 18px;
+
+    }
+    .imagenes{
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+      
+     justify-content: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     @include queries-imagenes;
+    
+            .img1{ 
+            height: 400px;    
+            @include queries-1;
+           }
+
+           .img2{
+            height: 400px;    
+            @include queries-2;
+           }
+
+           .img3{
+
+           
+            @include queries-3;
+           }
+
+           }
+           
+
+           
+
+           }
+
+          
+      
+
+
+
+
 .encabezado1,
 ul li,
 .textocomofunciona4,
@@ -50,6 +135,7 @@ ol li,
 .textocomofunciona2,
 .textoviajero2,
 .textolocal2,
+.textoayuda2,
 .button1comofunciona,
 .button1viajero,
 .button1local,
@@ -64,6 +150,7 @@ ol li,
 .textolocal,
 .button2index,
 .textocomofunciona,
+.textoayuda,
 .textoexperienciadenuestrosusuarios {
     background-color: $backgroundheader;
 }
@@ -81,6 +168,7 @@ h2,
 }
 
 p,
+.card-text,
 .textoviajero,
 .textolocal,
 .textoindex1,
@@ -168,52 +256,88 @@ ol li,
             font-family: 'Comfortaa', cursive;
             text-transform: uppercase;
             font-size: 15px;
-            padding: 10px 20px 10px 20px;
 
+        }
+
+        .naranja {
+            padding: 10px 20px 10px 20px;
 
             &:hover {
                 color: $backgroundnaranja;
                 text-decoration: none;
-                font-weight: bold;
             }
 
             &:active {
-                border-bottom:$backgroundnaranja solid 3px;
+                color: $backgroundnaranja;
                 text-decoration: none;
                 font-weight: bold;
-                  }
+
+            }
+
+        }
+
+        .verde {
+            padding: 10px 20px 10px 20px;
+
+            &:hover {
+                color: $backgroundverde;
+                text-decoration: none;
+
+            }
+
+            &:active {
+                color: $backgroundverde;
+                text-decoration: none;
+                font-weight: bold;
+
+            }
+
+        }
+
+        .rojo {
+            padding: 10px 20px 10px 20px;
+
+            &:hover {
+                color: $backgroundrojo;
+                text-decoration: none;
+
+            }
+
+            &:active {
+                color: $backgroundrojo;
+                text-decoration: none;
+                font-weight: bold;
+
+            }
+
         }
 
         .activisimoverde {
             background-color: $backgroundverde;
-            padding: 5px;
-            border-radius: 10px;
-            font-style: none;
+            border-radius: 5px;
 
-            span{
+            span {
                 color: white;
             }
         }
+
         .activisimorojo {
             background-color: $backgroundrojo;
-            padding: 5px;
-            border-radius: 10px;
-            font-style: none;
+            border-radius: 5px;
 
-            span{
+            span {
                 color: white;
             }
-                    }
-                    .activisimonaranja {
-                        background-color: $backgroundnaranja;
-                        padding: 5px;
-                        border-radius: 10px;
-                        font-style: none;
-            
-                        span{
-                            color: white;
-                        }
-                                }             
+        }
+
+        .activisimonaranja {
+            background-color: $backgroundnaranja;
+            border-radius: 5px;
+
+            span {
+                color: white;
+            }
+        }
     }
 }
 
@@ -251,8 +375,8 @@ ol li,
 .imagenmision {
     width: 100%;
     height: 550px;
-    background-image: url(../../desafio12/IMAGE/mision.jpg);
-    background-size: 100% 100%;
+    background-image: url(/image/mision.jpg);
+    background-size: cover;
     padding: 40px 40px 40px 40px;
     display: flex;
     justify-content: flex-start;
@@ -261,7 +385,7 @@ ol li,
 
     .textoindex1 {
         color: black;
-        font-size: 18px;
+        font-size: 16px;
         font-style: bold;
         padding: 30px 30px 30px 30px;
         opacity: .8;
@@ -320,15 +444,15 @@ ol li,
 
 
             .playstore {
-                background-image: url(../../desafio12/svg/playstore.svg);
+                background-image: url(/svg/playstore.svg);
             }
 
             .microsoft {
-                background-image: url(../../desafio12/svg/microsoft.svg);
+                background-image: url(/svg/microsoft.svg);
             }
 
             .aplee {
-                background-image: url(../../desafio12/SVG/AppStore.svg);
+                background-image: url(/svg/appstore.svg);
                 width: 70px;
                 height: 70px;
                 margin: 10px;
@@ -341,19 +465,17 @@ ol li,
 
 /*imagen como funciona /*/
 .imagencomofunciona {
-    background-image: url(../../desafio12/IMAGE/comofuncionaimagen.jpg);
+    background-image: url(/image/comofuncionaimagen.jpg);
     height: 550px;
     width: 100%;
-    background-size: 100% 110%;
+    background-size: cover;
     padding: 40px 40px 40px 40px;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    @include queries-imagencomofunciona;
-
 
     .textocomofunciona {
-        font-size: 18px;
+        font-size: 16px;
         font-style: bold;
         padding: 30px;
         width: 250px;
@@ -387,15 +509,16 @@ ol li,
         margin: 20px 0px 0px 40px;
     }
 
-    
+
     .espacioentrelocalyviajero {
         height: 20px;
         width: 100%;
         background-color: $backgroundheader;
-       
+
     }
+
     .tablalau {
-       
+
         ul li {
             font-size: 16px;
             line-height: 30px;
@@ -410,7 +533,7 @@ ol li,
             padding-left: 40px;
             width: 170px;
             @include queries-local;
-            
+
 
         }
 
@@ -461,6 +584,7 @@ ol li,
 
     .textoconclusioncomofunciona {
         width: 500px;
+        padding:30px;
         font-size: 16px;
         margin: 0px;
         @include queries-textoconclusioncomofunciona;
@@ -468,7 +592,7 @@ ol li,
 
     .imagenconclusioncomofunciona {
         width: 600px;
-        border-radius: 30px;
+        border-radius: 10px;
         margin: 0px;
         @include queries-imagenconclusioncomofunciona;
 
@@ -540,15 +664,15 @@ ol li,
 
 
             .playstore {
-                background-image: url(../../desafio12/svg/playstore.svg);
+                background-image: url(/svg/playstore.svg);
             }
 
             .microsoft {
-                background-image: url(../../desafio12/svg/microsoft.svg);
+                background-image: url(/svg/microsoft.svg);
             }
 
             .aplee {
-                background-image: url(../../desafio12/SVG/AppStore.svg);
+                background-image: url(/svg/appstore.svg);
                 width: 70px;
                 height: 70px;
                 margin: 10px;
@@ -572,19 +696,17 @@ ol li,
 
 /*imagen viajero/*/
 .imagenviajero {
-    background-image: url(../../desafio12/IMAGE/viajero.jpg);
+    background-image: url(/image/viajero.jpg);
     height: 550px;
     width: 100%;
-    background-size: 100% 110%;
+    background-size: cover;
     padding: 40px 40px 40px 40px;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    @include queries-imagenviajero;
-
 
     .textoviajero {
-        font-size: 18px;
+        font-size: 16px;
         font-style: bold;
         padding: 30px;
         width: 250px;
@@ -593,12 +715,13 @@ ol li,
         border-radius: 5px;
     }
 }
+
 /*fin imagen viajero/*/
 
 /*body viajero/*/
 .bodyviajero {
     background-color: $backgroundheader;
-   
+
 
     .textoviajero2 {
         font-size: 18px;
@@ -618,34 +741,55 @@ ol li,
     }
 
 
-    .listaviajero{
-       
+    .listaviajero {
+
         display: flex;
         justify-content: inherit;
-                    
-        .col-12{
+
+        .col-12 {
             padding: 0 !important;
         }
-       .listado {
-           
+
+        .listado {
+
             @include queries-listadohorizontal;
-          
+
             @include queries-listadovertical;
-                     }
+        }
 
         .list-group-item.active {
             color: #fff;
             background-color: $backgroundverde !important;
             border: solid $backgroundverde 1px !important;
-                      }
-          .tab-pane{
-              padding-bottom: 30px;
-              padding-left: 40px;
-              padding-right: 40px;
-          }
-    
+        }
+
+        .tab-pane {
+            padding-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .card {
+            background-color: transparent;
+            border: none;
+        }
+
+        .mockup1 {
+            @include queries-mockup1;
+
+            .mockup2 {
+                @include queries-mockup2;
+
+            }
+
+            .mockup3 {
+                text-align: center;
+                @include queries-mockup3
+            }
+        }
+
         .redes1viajero {
-           
+
             .playstore {
                 width: 70px;
                 height: 70px;
@@ -653,41 +797,42 @@ ol li,
             }
 
             .microsoft {
-               
+
                 width: 70px;
                 height: 70px;
                 margin: 10px;
             }
 
             .aplee {
-               
+
                 width: 70px;
                 height: 70px;
                 margin: 10px;
             }
-        
 
-    }          
+
+
+
+        }
+    }
+
 }
 
-}
 /*fin body viajero/*/
 
 /*imagen local/*/
 .imagenlocal {
-    background-image: url(../../desafio12/IMAGE/local.jpg);
-    height: 100%;
+    background-image: url(/image/local1.jpg);
+    height: 550px;
     width: 100%;
-    background-size: 100% 110%;
+    background-size: cover;
     padding: 40px 40px 40px 40px;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    @include queries-imagenlocal;
-
 
     .textolocal {
-        font-size: 18px;
+        font-size: 16px;
         font-style: bold;
         padding: 30px;
         width: 250px;
@@ -696,12 +841,13 @@ ol li,
         border-radius: 5px;
     }
 }
+
 /*fin imagen local/*/
 
 /*body local/*/
 .bodylocal {
     background-color: $backgroundheader;
-   
+
 
     .textolocal2 {
         font-size: 18px;
@@ -721,45 +867,95 @@ ol li,
     }
 
 
-    .listalocal{
-       
+    .listalocal {
+
         display: flex;
         justify-content: inherit;
-                    
-        .col-12{
+
+        .col-12 {
             padding: 0 !important;
         }
-       .listado {
-           
+
+        .listado {
+
             @include queries-listadohorizontal;
-          
+
             @include queries-listadovertical;
-                     }
+        }
 
         .list-group-item.active {
             color: #fff;
             background-color: $backgroundrojo !important;
             border: solid $backgroundrojo 1px !important;
-                      }
-          .tab-pane{
-              padding-bottom: 30px;
-              padding-left: 40px;
-          }
-    .uneteanuestracomunidadlocal {
-        margin: 0 auto;
-        width: 400px;
-        height: fit-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        background-color: $backgroundheader;
-        border-bottom: solid 50px $backgroundheader;
-        @include queries-uneteanuestracomunidadlocal;
+        }
 
-      
-    }          
-}
+        .tab-pane {
+            padding-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .card {
+            background-color: transparent;
+            border: none;
+        }
+
+        .mockup1 {
+            @include queries-mockup1;
+
+            .mockup2 {
+                @include queries-mockup2;
+
+            }
+
+            .mockup3 {
+                text-align: center;
+                @include queries-mockup3
+            }
+        }
+
+        .redes1viajero {
+
+            .playstore {
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+
+            .microsoft {
+
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+
+            .aplee {
+
+                width: 70px;
+                height: 70px;
+                margin: 10px;
+            }
+
+
+        }
+
+
+
+        .uneteanuestracomunidadlocal {
+            margin: 0 auto;
+            width: 400px;
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            background-color: $backgroundheader;
+            border-bottom: solid 50px $backgroundheader;
+            @include queries-uneteanuestracomunidadlocal;
+
+
+        }
+    }
 
 }
 
@@ -768,10 +964,10 @@ ol li,
 /*imagen experiencia de nuestros usuarios /*/
 .imagenexperienciadenuestrosusuarios {
 
-    background-image: url(../../desafio12/IMAGE/experienciadenuestrosusuarios.jpg);
+    background-image: url(/image/experienciadenuestrosusuarios.jpg);
     height: 800px;
     width: 100%;
-    background-size: 100% 100%;
+    background-size: cover;
     padding: 40px 40px 40px 40px;
     display: flex;
     justify-content: start;
@@ -779,7 +975,7 @@ ol li,
     @include queries-imagenexperienciadenuestrosusuarios;
 
     .textoexperienciadenuestrosusuarios {
-        font-size: 18px;
+        font-size: 16px;
         font-style: bold;
         padding: 30px;
         width: 250px;
@@ -815,4 +1011,128 @@ ol li,
 
     }
 }
+
 /*imagen experiencia de nuestros usuarios /*/
+
+/*imagen ayuda /*/
+
+.imagenayuda {
+
+    background-image: url(/image/ayuda.jpeg);
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+
+
+    .textoayuda {
+        font-size: 16px;
+        font-style: bold;
+        padding: 30px;
+        width: 250px;
+        height: 220px;
+        opacity: .8;
+        border-radius: 5px;
+        position: absolute;
+        @include queries-textoayuda;
+    }
+}
+
+
+.bodyayuda {
+    background-color: $backgroundheader;
+
+
+    .textoayuda2 {
+        font-size: 18px;
+        padding: 20px;
+        color: $font-white;
+        position: relative;
+        margin: 00px 0px 0px 40px;
+        border-top: 20px $backgroundheader solid;
+    }
+
+    .pregyresp{
+        margin: 30px 30px 40px 40px;
+       
+        }
+       
+.faq {
+    font-family: $font-comfortaa;
+    color: $backgroundgris;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: bold;
+   
+}
+
+.faqrespuestas {
+    font-family: $font-opensans;
+    font-size: 16px;
+    margin-left: 30px;
+  
+}
+
+ 
+.formulario{
+   
+    margin: 0 auto;
+    font-family: $font-opensans;
+       
+    .textoayudaformulario{
+        font-size: 18px;
+        padding: 20px;
+        color: $font-white;
+        position: relative;
+        margin: 00px 0px 0px 40px;
+       background-color: $backgroundverde ;
+  
+    }
+    form{
+        
+        width: 60%;   
+        margin: 0 auto;
+        margin-top: 40px;
+        padding-bottom: 70px;
+        @include queries-form;
+
+        p{
+            text-align: center;
+            margin-left: 30px;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: $font-comfortaa;
+            color: white;
+            background-color: $backgroundrojo;
+            opacity: .8;
+        }
+    
+       
+        .botonformulario1{
+           padding: 0px 50px 0px 50px;;
+         display: flex;
+         justify-content: center;
+    
+
+
+        }
+        .botonformulario{
+            margin: 10px 10px 10px 10px;
+            background-color: $backgroundrojo;
+            border: solid $backgroundrojo;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: $font-opensans;
+
+        }
+    
+
+}
+
+
+
+}
+}
