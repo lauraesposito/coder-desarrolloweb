@@ -1327,7 +1327,7 @@ ol li,
   font-style: bold;
   padding: 30px;
   width: 250px;
-  height: 220px;
+  height: 210px;
   opacity: 0.8;
   border-radius: 5px;
   position: absolute;
@@ -1336,7 +1336,7 @@ ol li,
   .imagenayuda .textoayuda {
     margin-left: 10px;
     position: absolute;
-    height: 150px;
+    height: 210px;
     width: 250px;
   }
 }
@@ -1344,7 +1344,7 @@ ol li,
   .imagenayuda .textoayuda {
     margin-left: 10px;
     position: absolute;
-    height: 180px;
+    height: 230px;
     width: 210px;
   }
 }
@@ -1352,7 +1352,7 @@ ol li,
   .imagenayuda .textoayuda {
     margin-left: 10px;
     position: absolute;
-    height: 240px;
+    height: 270px;
     width: 190px;
   }
 }
@@ -1360,7 +1360,7 @@ ol li,
   .imagenayuda .textoayuda {
     margin-left: 10px;
     position: absolute;
-    height: 240px;
+    height: 270px;
     width: 190px;
   }
 }
@@ -1368,7 +1368,7 @@ ol li,
   .imagenayuda .textoayuda {
     margin-left: 10px;
     position: absolute;
-    height: 270px;
+    height: 410px;
     width: 150px;
     font-size: 17px;
   }

@@ -248,7 +248,7 @@ ol li,
         overflow-x: auto;
         white-space: wrap;
         -webkit-overflow-scrolling: touch;
-        @include queries-menu1();
+        @include queries-menu1;
 
         a {
             text-decoration: none;
@@ -257,8 +257,7 @@ ol li,
             text-transform: uppercase;
             font-size: 15px;
 
-        }
-
+            }
         .naranja {
             padding: 10px 20px 10px 20px;
 
@@ -271,7 +270,7 @@ ol li,
                 color: $backgroundnaranja;
                 text-decoration: none;
                 font-weight: bold;
-
+             
             }
 
         }
@@ -315,9 +314,11 @@ ol li,
         .activisimoverde {
             background-color: $backgroundverde;
             border-radius: 5px;
+           
 
             span {
                 color: white;
+              
             }
         }
 
@@ -1033,7 +1034,7 @@ ol li,
         font-style: bold;
         padding: 30px;
         width: 250px;
-        height: 220px;
+        height: 210px;
         opacity: .8;
         border-radius: 5px;
         position: absolute;
